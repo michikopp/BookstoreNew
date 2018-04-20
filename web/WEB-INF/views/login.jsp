@@ -8,20 +8,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
 <h1>Login-Page</h1>
 
 <h2>${error}</h2>
-<form action="einloggen" method="post">
-    Loginname: <input type="text" name="loginname">
-    Passwort: <input type="password" name="password">
-    <input type="submit" value="Einloggen"/>
+<form action="einloggen" method="post" class="navbar-form">
+    Loginname: <input type="text" name="loginname" placeholder="Loginname">
+    Passwort: <input type="password" name="password" placeholder="Passwort">
+    <input type="submit" value="Einloggen" class="btn btn-success"/>
 </form>
 
 
-<a href="registrieren">Register</a>
+<a href="registrieren" class="btn btn-info">Register</a>
 
 
 </body>

@@ -9,15 +9,15 @@
 <html>
 <head>
     <title>User-Registration</title>
-
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
-
-<form method="post" action="registrieren">
-    Benutzername:<input type="text" name="username">
-    Passwort:<input type="password" name="password">
-    <input type="submit" value="registrieren">
+<%@include file="../common/nav.jspf"%>
+<form method="post" action="registrieren" class="navbar-form">
+    Benutzername:<input type="text" name="username" placeholder="Benutzername">
+    Passwort:<input type="password" name="password" placeholder="Passwort">
+    <input type="submit" value="registrieren" class="btn btn-success">
 </form>
 
 </body>

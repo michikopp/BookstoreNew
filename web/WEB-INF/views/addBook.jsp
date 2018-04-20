@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Neues Buch</title>
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <p>neues Buch erstellen:</p>
@@ -17,7 +18,7 @@
     Titel:<input type="text" name="titel" /><br>
     Autor:<input type="text" name="autor" /><br>
     ISBN:<input type="text" name="isbn" /><br>
-    <input type="submit" value="Speichern">
+    <input type="submit" value="Speichern" class="btn btn-success">
 </form>
 </body>
 </html>
