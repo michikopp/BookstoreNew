@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: wagenhuberg
+  User: Kopp
   Date: 23.03.2018
   Time: 09:28
   To change this template use File | Settings | File Templates.
@@ -19,11 +19,12 @@
             <td>${book.isbn}</td>
             <td>${book.titel}</td>
             <td>${book.author}</td>
+            <td><a href="deleteBooks.do?id=${book.id}">Löschen</a> </td>
         </tr>
     </c:forEach>
 </table>
 
-
+<a href="addBooks.do">Neu</a>
 
 
 </body>

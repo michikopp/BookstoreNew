@@ -53,6 +53,16 @@ public class BookService {
         }
     }
 
+    public Book findBook(int id) {
+        return entityManager.find(Book.class, id);
+    }
+
+    public void deleteBook(int id) {
+        entityManager.getTransaction().begin();
+        entityManager.remove(findBook(id));
+        entityManager.getTransaction().commit();
+    }
+
 
 
     public static void main(String[] args) {
@@ -60,7 +70,7 @@ public class BookService {
 
 //        Book book1 = new Book("234", "Effective Java", "Joshua Block");
 //        Book book2 = new Book("453","Java für Anfänger", "Andreas Meier");
-//Book book3 = new Book()
+        //Book book3 = new Book()
         BookService BookService = new BookService();
 //        BookService.save(book1);
 //        BookService.save(book2);

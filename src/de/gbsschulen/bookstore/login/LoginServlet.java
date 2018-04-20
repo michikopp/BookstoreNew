@@ -1,11 +1,13 @@
 package de.gbsschulen.bookstore.login;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+//@WebServlet(urlPatterns = "/einloggen.do")
 public class LoginServlet extends HttpServlet{
 
     private LoginService loginService = new LoginService();
