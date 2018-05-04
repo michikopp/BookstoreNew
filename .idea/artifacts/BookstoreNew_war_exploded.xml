@@ -12,6 +12,7 @@
           <element id="library" level="project" name="jstl:jstl:1.2" />
           <element id="library" level="project" name="org.webjars:bootstrap:3.3.7-1" />
           <element id="library" level="project" name="org.webjars:jquery:3.3.1" />
+          <element id="library" level="project" name="org.jboss.weld.servlet:weld-servlet:2.4.6.final" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="BookstoreNew/web/Web" />

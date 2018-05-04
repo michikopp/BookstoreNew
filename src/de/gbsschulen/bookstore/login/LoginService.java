@@ -1,11 +1,13 @@
 package de.gbsschulen.bookstore.login;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
+@ApplicationScoped
 public class LoginService {
 
     private EntityManagerFactory entityManagerFactory;

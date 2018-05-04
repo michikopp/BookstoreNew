@@ -1,5 +1,6 @@
 package de.gbsschulen.bookstore.book;
 
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,8 +12,8 @@ import java.util.List;
 //@WebServlet(urlPatterns = "/listBooks.do")
 public class ListsBookServlet extends HttpServlet{
 
-
-    private BookService bookService = new BookService();
+    @Inject
+    private BookService bookService;
 
 
     @Override
